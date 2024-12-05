@@ -26,7 +26,7 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #5f6195;
   text-decoration: inherit;
 }
 a:hover {
@@ -77,12 +77,12 @@ header h1 {
 
 h2 {
   flex: 0 0 20%;
-  max-width: 14vw;
+  max-width: 14rem;
   text-align: left;
   padding-bottom: 15px;
   margin-bottom: 15px;
   border-bottom: 4px solid var(--primary);
-  font-size: 3vw;
+  font-size: 3rem;
   line-height: 1.1;
 }
 
@@ -156,60 +156,37 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: flex-start;
   text-align: left;
-}
-
-.section-content-div {
-  flex: 0 0 77%;
 }
 
 .page-section p {
   margin-bottom: 20px;
 }
 
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.flex-item {
-  border: 5px solid var(--secondary);
-  background-color: var(--primary);
+.port-item {
+  border-bottom: 3px solid var(--secondary);
   color: var(--tertiary);
-  min-height: 150px;
-  max-height: 150px;
-  flex-basis: calc(50% - 1em);
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   padding: 0 0 20px 0;
   margin: 0.5em;
   text-decoration: none;
-  background-blend-mode: soft-light;
-  background-size: 150%;
   transition: all 0.5s;
   font-size: 0.9rem;
   position: relative;
 }
 
-/* feature first portfolio item */
-.flex-item:first-child {
-    min-height: 400px;
-    flex-basis: 100%;
+.port-item-image {
+  width: 450px;
+  height: 250px;
+  justify-self: left;
+  margin-right: 1rem;
 }
 
-.flex-item:hover {
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-.flex-item div {
-  background-color: var(--secondary);
-  padding: 8px 10px;
-}
-
-.flex-item h3 {
-  font-size: 1.6rem;
+.port-item-content {
+  flex: 1 0;
+  justify-self: right;
 }
 
 a.fill-div {
@@ -249,17 +226,10 @@ a.fill-div {
   color: var(--secondary);
 }
 
-.port-item {
-  background-size: cover;
-  background-position: center;
-}
-
 .user {
-  display: inline-block;
   width: 150px;
   height: 150px;
   border-radius: 50%;
-
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -276,9 +246,96 @@ a.fill-div {
 
 #about {
   font-size: large;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+#personal-info {
+  margin-right: 3rem;
+}
+
+#portfolio-div {
+  flex: 0 0 75%;
+}
+
+#portfolio {
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+#portfolio h3 {
+    max-width: 100%;
+    border-bottom: 4px solid var(--primary);
+    font-size: 2rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+#port-nav {
+  margin-top: -3rem;
+  position: fixed;
+}
+
+#port-nav h3 {
+  border-bottom: 3px solid var(--primary);
 }
 
 /* media queries */
+
+@media screen and (max-width: 1180px) {
+
+h2, h3, figure {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.page-section {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.port-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+
+.port-item p {
+  margin-top: 1rem;
+}
+
+#personal-info {
+  margin-right: 0rem;
+}
+
+#about {
+  justify-content: center;
+  align-items: center;
+}
+
+#portfolio {
+  justify-content: center;
+  align-items: center;
+}
+
+#port-nav {
+  margin-top: -3rem;
+  margin-bottom: 2rem;
+  position: relative;
+  justify-items: flex-start;
+  flex-direction: row;
+}
+
+#port-nav-container {
+  position: relative;
+}
+
+}
 
 /* media queries for a max-width of 980px */
 @media screen and (max-width: 980px) {
@@ -315,13 +372,22 @@ a.fill-div {
 }
 
 @media screen and (max-width: 768px) {
-  .flex-item {
+  .port-item {
     flex-basis: 100%;
-    max-height: 200px;
     min-height: 200px;
   }
-  .flex-item:first-child {
-    max-height: 200px;
+}
+
+@media screen and (max-width: 550px) {
+  .port-item {
+    flex-basis: 50%;
     min-height: 200px;
+  }
+  .port-item-image {
+
+    width: 80vw;
+    height: 45vw;
+    justify-self: left;
+    margin-right: 1rem;
   }
 }
