@@ -23,9 +23,7 @@ function App() {
   return (
     <>
       <Header />
-      <main className="page-wrapper">
       <Outlet />
-      </main>
       <Footer />
     </>
   );

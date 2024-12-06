@@ -22,6 +22,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-size: 1em;
 }
 
 a {
@@ -77,7 +78,7 @@ header h1 {
 
 h2 {
   flex: 0 0 20%;
-  max-width: 14rem;
+  max-width: 17rem;
   text-align: left;
   padding-bottom: 15px;
   margin-bottom: 15px;
@@ -87,7 +88,7 @@ h2 {
 }
 
 footer {
-  padding: 15px 6% 15px 0;
+  padding: 2rem 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -134,6 +135,8 @@ nav a:last-child {
 }
 
 main {
+  margin-right: 3rem;
+  margin-left: 3rem;
   margin-top: 20px;
   margin-bottom: 45px;
 }
@@ -158,6 +161,14 @@ main {
   align-items: flex-start;
   justify-content: flex-start;
   text-align: left;
+}
+
+.page-section h3 {
+  font-size: larger;
+}
+
+.page-section a {
+  font-size: larger;
 }
 
 .page-section p {
@@ -198,34 +209,6 @@ a.fill-div {
   text-decoration: none;
 }
 
-.contact address {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  height: 100%;
-}
-
-.contact address a {
-  color: var(--tertiary);
-  padding: 5px;
-  text-decoration: none;
-  font-size: 1.3rem;
-  font-style: normal;
-  background-image: linear-gradient(270deg, var(--primary) 0%, var(--primary) 100%);
-  background-repeat: no-repeat;
-  background-size: 100% 0.2em;
-  background-position: bottom;
-  transition: all 0.25s ease-in;
-  margin: 0 0.2rem 0.1rem;
-  display: inline-block;
-}
-
-.contact address a:hover {
-  background-size: 100% 88%;
-  color: var(--secondary);
-}
-
 .user {
   width: 150px;
   height: 150px;
@@ -244,12 +227,68 @@ a.fill-div {
   height: 3rem;
 }
 
+#aboutme {
+  justify-content: space-between;
+}
+
 #about {
   font-size: large;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  text-align: center;
+}
+
+#about-right {
+ flex: 0 0 20%;
+}
+
+#contact-greeting {
+  flex: 0 1 12%;
+  margin-bottom: 1rem;
+}
+
+#contact-me {
+  justify-content: space-between;
+}
+
+#contact-form {
+  flex: 0 0 33%;
+  font-size: x-large;
+  justify-content: center;
+  text-align: center;
+  margin-top: -7rem;
+  margin-left: -12%;
+}
+
+#contact-form  p {
+  margin-top: 1rem;
+}
+
+#contact-form textarea {
+  width: 25rem;
+  height: 15rem;
+  resize: none;
+  border-radius: 1rem;
+  padding: 5px;
+}
+
+#contact-form input {
+  width: 25rem;
+  border-radius: 1rem;
+  padding: 5px;
+}
+
+#contact-form button {
+  padding: 0.5rem;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  background-color: var(--primary);
+}
+
+#contact-form button:hover {
+  background-color: rgb(169, 174, 182);
+  cursor: pointer;
 }
 
 #personal-info {
@@ -257,6 +296,7 @@ a.fill-div {
 }
 
 #portfolio-div {
+  margin-top: -7rem;
   flex: 0 0 75%;
 }
 
@@ -318,9 +358,18 @@ h2, h3, figure {
   align-items: center;
 }
 
+#contact-form {
+  margin-top: 0rem;
+  margin-left: 0%;
+}
+
 #portfolio {
   justify-content: center;
   align-items: center;
+}
+
+#portfolio-div {
+  margin-top: 0rem;
 }
 
 #port-nav {
@@ -384,10 +433,25 @@ h2, h3, figure {
     min-height: 200px;
   }
   .port-item-image {
-
     width: 80vw;
     height: 45vw;
     justify-self: left;
     margin-right: 1rem;
+  }
+
+  #contact-form textarea {
+    width: 80vw;
+    height: 45vw;
+    resize: none;
+    border-radius: 1rem;
+  }
+
+  #contact-form input {
+    width: 80vw;
+  }
+
+  #main-nav {
+    display: flex;
+    flex-direction: column;
   }
 }

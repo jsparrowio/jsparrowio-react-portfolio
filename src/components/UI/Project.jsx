@@ -1,7 +1,7 @@
 export default function Project({ projectsArray }) {
     return (
         projectsArray.map((project) =>
-            <>
+            <div className="port-container" key={project.id+'-container-div'}>
                 <h3 id={`${project.id}`} key={project.id+'-h3'}>{`${project.name}`}</h3>
                 <div className="port-item" key={project.id+'-maindiv'}>
                     <img src={`${project.screenshot}`} className="port-item-image" key={project.id+'-img'}></img>
@@ -19,7 +19,7 @@ export default function Project({ projectsArray }) {
                         <p key={project.id+'-description-p'}><b>Description:</b> {project.description}</p>
                     </div>
                 </div>
-            </>
+            </div>
         )
     );
 }

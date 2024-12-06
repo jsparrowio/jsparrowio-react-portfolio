@@ -3,7 +3,7 @@ import PortfolioNav from '../components/PortfolioNav';
 
 export default function AboutMePage() {
   return (
-    <>
+    <main>
       <h2 key='portfolio-main-header'>Portfolio</h2><br />
       <section className="page-section" id="portfolio" key='port-section'>
         <div id="port-nav-container" key='port-nav-container'>
@@ -16,6 +16,6 @@ export default function AboutMePage() {
           <PortfolioList />
         </div>
       </section>
-    </>
+    </main>
   );
 }

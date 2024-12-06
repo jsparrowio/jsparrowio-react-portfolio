@@ -1,12 +1,10 @@
 export default function Nav({ links }) {
 
   return (
-    <nav className="navbar navbar-expand-lg bg-secondary">
-      <div className="container-fluid">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+    <nav>
+          <ul id="main-nav">
             {links.map((link) => link)}
           </ul>
-        </div>
     </nav>
   );
 }

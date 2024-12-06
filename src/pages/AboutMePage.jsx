@@ -2,7 +2,7 @@ import Skills from '../components/SkillList';
 
 export default function AboutMePage() {
   return (
-    <>
+    <main>
       <h2>About Me</h2>
       <section className="page-section" id="aboutme">
         <div id="personal-info">
@@ -23,7 +23,8 @@ export default function AboutMePage() {
           <h3>Skills:</h3>
           <p><Skills /></p>
         </div>
+        <div className='placeholder' id="about-right"></div>
       </section>
-    </>
+    </main>
   );
 }
