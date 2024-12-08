@@ -9,6 +9,8 @@ This project was a portfolio for all of my coding work completing using ReactJS,
 See deployed application here
 
 ## Screenshot
+
+<img src="./src/assets/pflss.png">
   
 ## Table of Contents
   
