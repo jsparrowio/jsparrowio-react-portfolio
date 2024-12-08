@@ -10,16 +10,16 @@ function App() {
   const [currentPage, setPage] = useState("About Me")
   useEffect(() => {
     if (location.pathname === '/') {
-        setPage("About Me");
-    } else if(location.pathname === '/portfolio') {
-        setPage("Portfolio");
-    } else if(location.pathname === '/contact') {
-        setPage("Contact Me");
-    } else if(location.pathname === '/resume') {
-        setPage("Resume");
+      setPage("About Me");
+    } else if (location.pathname === '/portfolio') {
+      setPage("Portfolio");
+    } else if (location.pathname === '/contact') {
+      setPage("Contact Me");
+    } else if (location.pathname === '/resume') {
+      setPage("Resume");
     }
     document.title = `${currentPage} | jsparrowio - Portfolio`;
-});
+  });
   return (
     <>
       <Header />

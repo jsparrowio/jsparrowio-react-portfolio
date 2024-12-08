@@ -6,7 +6,7 @@ export const ProjectList = [
     {
         id: 'port-1',
         name: 'This Portfolio',
-        deployedLink: '',
+        deployedLink: 'https://jsparrowioportfolio.netlify.app/',
         gitHubLink: 'https://github.com/jsparrowio/jsparrowio-react-portfolio',
         screenshot: pflss,
         contributors: 'Witten code by Josh Garrett (jsparrowio). Some code borrowed or based on code from class activities and old challenges from the UoM/edX Coding Bootcamp. Some code based on code found on Stack Overflow.',
