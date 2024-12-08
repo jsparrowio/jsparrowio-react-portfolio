@@ -17,7 +17,10 @@ export default function AboutMePage() {
         </div>
         <div className="section-content-div" id="about">
           <h3>Greetings!</h3>
-          <p>My name is Josh Garrett! More details coming soon...</p>
+          <p>My name is Josh Garrett, and I am a Full Stack Developer currently in the process of earning my certificate from the University of Minnesota/edX Coding Bootcamp. </p>
+          <p>My previous professional experience has been chiefly in the retail landscape, holding 9+ years of retail leadership positions. However, I do feel this has prepared me for a future in the development world as it gave me invaluable experience working with teams, understanding business accum, developing great time management and organizational skills, and understanding the needs of clients. I also worked first-hand with ever-evolving technology in the retail landscape, often spearheading new technological rollouts and helping the team become accustom to new tech.</p>
+          <p>Beyond professional experience, I have worked with tech since a young age. I repaired my first computer at an early age, wrote my first website in HTML, php, and mySQL at 14, and have done several smaller hobby projects with code and hardware since. I have a strong technological accum, am a fast paced learner, and am always ready to take on a new challenge.</p>
+          <p>Look out for my future projects, and to see what comes next from Jsparrowio Website and Application Design.</p>
           <p>Stay tuned!</p>
           <br />
           <h3>Skills:</h3>

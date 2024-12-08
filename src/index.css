@@ -222,6 +222,10 @@ a.fill-div {
   background-image: url('https://media.licdn.com/dms/image/v2/D4E03AQHX7uQyhMn5gA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1700330526781?e=1738800000&v=beta&t=Fhxsd3GZHk0rXTrWfKTte-96Q5JJofPFgSMFzJlIlfs');
 }
 
+.section-content-div {
+  margin-top: -7rem;
+}
+
 .skills-icon {
   width: 3rem;
   height: 3rem;
@@ -232,6 +236,7 @@ a.fill-div {
 }
 
 #about {
+  flex: 1 0;
   font-size: large;
   display: flex;
   flex-direction: column;
@@ -257,7 +262,6 @@ a.fill-div {
   font-size: x-large;
   justify-content: center;
   text-align: center;
-  margin-top: -7rem;
   margin-left: -12%;
 }
 
@@ -296,7 +300,6 @@ a.fill-div {
 }
 
 #portfolio-div {
-  margin-top: -7rem;
   flex: 0 0 75%;
 }
 
@@ -349,8 +352,13 @@ h2, h3, figure {
   margin-top: 1rem;
 }
 
+.section-content-div {
+  margin-top: 0;
+}
+
 #personal-info {
   margin-right: 0rem;
+  margin-bottom: 1rem;
 }
 
 #about {
@@ -359,17 +367,12 @@ h2, h3, figure {
 }
 
 #contact-form {
-  margin-top: 0rem;
   margin-left: 0%;
 }
 
 #portfolio {
   justify-content: center;
   align-items: center;
-}
-
-#portfolio-div {
-  margin-top: 0rem;
 }
 
 #port-nav {
@@ -420,20 +423,13 @@ h2, h3, figure {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .port-item {
-    flex-basis: 100%;
-    min-height: 200px;
-  }
-}
-
 @media screen and (max-width: 550px) {
   .port-item {
     flex-basis: 50%;
     min-height: 200px;
   }
   .port-item-image {
-    width: 80vw;
+    width: 70vw;
     height: 45vw;
     justify-self: left;
     margin-right: 1rem;
