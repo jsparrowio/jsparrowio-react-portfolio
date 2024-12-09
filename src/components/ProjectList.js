@@ -1,7 +1,9 @@
+// import screenshots to be used inside the project objects
 import pwsgss from '../assets/pwsgss.png';
 import wdss from '../assets/wdss.png';
 import pflss from '../assets/pflss.png';
 
+// exports the project list to be used elsewhere
 export const ProjectList = [
     {
         id: 'port-1',

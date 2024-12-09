@@ -1,6 +1,9 @@
+// import the Skills UI component to render the skill list on the page
 import Skills from './UI/Skills';
 
+// export the SkillList function to be imported elsewhere
 export default function SkillList() {
+    // a Skill icon will appear for every image link in the array
     return (
         <Skills
             links={[

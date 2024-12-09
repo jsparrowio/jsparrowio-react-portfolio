@@ -1,6 +1,9 @@
+// import skill list component to render skill icons on page
 import Skills from '../components/SkillList';
 
+// export page to be used in the main app/router
 export default function AboutMePage() {
+  // return the page
   return (
     <main>
       <h2>About Me</h2>

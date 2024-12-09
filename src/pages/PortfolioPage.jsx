@@ -1,7 +1,10 @@
+// import portfolio UI dependencies for rendering portfolio cards and the navigation for the portfolio
 import PortfolioList from '../components/PortfolioList';
 import PortfolioNav from '../components/PortfolioNav';
 
+// export page to be used in the main app/router
 export default function AboutMePage() {
+  // return the page
   return (
     <main>
       <h2 key='portfolio-main-header'>Portfolio</h2><br />
