@@ -1,39 +1,39 @@
 // import screenshots to be used inside the project objects
-import pwsgss from '../assets/pwsgss.png';
 import wdss from '../assets/wdss.png';
 import pflss from '../assets/pflss.png';
+import ccss from '../assets/ccss.png';
 
 // exports the project list to be used elsewhere
 export const ProjectList = [
     {
         id: 'port-1',
-        name: 'This Portfolio',
-        deployedLink: 'https://jsparrowioportfolio.netlify.app/',
-        gitHubLink: 'https://github.com/jsparrowio/jsparrowio-react-portfolio',
-        screenshot: pflss,
-        contributors: 'Witten code by Josh Garrett (jsparrowio). Some code borrowed or based on code from class activities and old challenges from the UoM/edX Coding Bootcamp. Some code based on code found on Stack Overflow.',
-        techUsed: 'React, JavaScript, CSS, HTML',
-        description: 'This project was a portfolio for all of my coding work completing using ReactJS, CSS, and some HTML. The portfolio is meant to showcase all of my work completing as a Full Stack Developer, including work completed in the UofM/edX Full Stack Online Coding Bootcamp. The portfolio will also be kep up to date and evolved as more projects are completed and coding technologies learned. The site also contains some personal information, contact info, a contact me section, and a resume section.',
+        name: 'Social Network API',
+        deployedLink: '',
+        gitHubLink: 'https://github.com/jsparrowio/social-network-api',
+        screenshot: 'https://github.com/jsparrowio/social-network-api/raw/main/assets/snapiss.png',
+        contributors: 'Witten code by Josh Garrett (jsparrowio)',
+        techUsed: 'TypeScript, express.js, and mongoDB/mongoose',
+        description: 'The social network API is a basic express.js and MongoDB based API server that handles requests to view, add, update, or delete several key social network data points such as: Users, friends, thoughts, and reactions. This API server has no front end, so much be tested using a REST API request creator such as Insomnia',
     },
     {
         id: 'port-2',
-        name: 'Employee Tracker',
-        deployedLink: '',
-        gitHubLink: 'https://github.com/jsparrowio/employee-tracker',
-        screenshot: 'https://github.com/jsparrowio/employee-tracker/raw/main/assets/main_menu_screenshot.png',
-        contributors: 'Base code provided by edX and their respective developers. A portion of code written with the help of Instructor Charlie Werness, and the XPert learning assistant chatbot provided by edX. Remainder of code written by Josh Garrett (jsparrowio)',
-        techUsed: 'TypeScript, node.js, npm, and postgreSQL',
-        description: 'The Employee Tracker is a CMS that allows you to store, access, update, or delete employees for your organization. It allows you to assign departments, roles, salaries, and managers to said employees. It also allows you to update or delete departments and roles for the employees as well. When you run the program, you will be brought to a main menu that allows you to select which function you would like to complete, which will include all of the features mentioned above.',
+        name: 'Candidate Search',
+        deployedLink: 'https://candidate-search-xray.onrender.com/',
+        gitHubLink: 'https://github.com/jsparrowio/candidate-search',
+        screenshot: 'https://github.com/jsparrowio/candidate-search/raw/main/src/assets/candsearchss.png',
+        contributors: 'Base code provided by edX and their respective developers. Remainder of code written by Josh Garrett (jsparrowio)',
+        techUsed: 'React, CSS, TypeScript, and GitHub APIs',
+        description: 'This project can be used to find potential coding candidates for any coding projects. It pulls potential candiates from GitHub, puts them on a single card with their avatar and pertinent info, and allows the user to accept (to be reviewed later) or reject the candidate. Then, the user can review all saved candidates to pursue or finally reject.',
     },
     {
         id: 'port-3',
-        name: 'PetZeppelin',
-        deployedLink: 'https://jsparrowio.github.io/pet-zeppelin/',
-        gitHubLink: 'https://github.com/jsparrowio/pet-zeppelin',
-        screenshot: 'https://github.com/jsparrowio/pet-zeppelin/raw/main/assets/images/login.png',
-        contributors: 'Josh Garrett, Lucas Hallman, Matt Oberdalhoff, Zachary LaCore, and Zachary Lynch',
-        techUsed: 'HTML, CSS (Tailwind), and JavaScript',
-        description: 'When opening the initial page, the user will be presented with a login screen. Upon entering a username and password, the site will check for an existing user by that name. If the username exists, the site will confirm that the password is correct. If the username is unique, it will create a new "account" with that username and password. After logging in, the user will be able to create blog posts that will contain a title, image, and post content, as well as read previous blog posts.',
+        name: 'CosmoCommute',
+        deployedLink: '',
+        gitHubLink: 'https://github.com/jsparrowio/cosmocommute',
+        screenshot: ccss,
+        contributors: 'Josh Garrett, Ka Vue, Nic Blaize, and Sierra Bjorlin',
+        techUsed: 'React, TypeScript, express.js, postgreSQL, jwt auth, and NASA APIs',
+        description: 'CosmoCommute is an app designed for space travelers, offering updates on interstellar traffic and space weather events. This enables users to plan safe and efficient routes for their space journeys, ensuring a seamless and informed trave; experience among the stars. Note: Due to certain factors, this app is not currently deployed. Feel free to check out the code, or even clone to run locally!',
     },
     {
         id: 'port-4',
@@ -47,12 +47,12 @@ export const ProjectList = [
     },
     {
         id: 'port-5',
-        name: 'Prework Study Guide',
-        deployedLink: 'https://jsparrowio.github.io/prework-study-guide/',
-        gitHubLink: 'https://github.com/jsparrowio/prework-study-guide',
-        screenshot: pwsgss,
-        contributors: 'All base code and content provided by edX and their respective developers. Additional written code and content by Josh Garrett (jsparrowio) with heavy guidance and influence from the edX/UoM Bootcamp Modules, in addition to other educational or open sources.',
-        techUsed: 'HTML, CSS, and JavaScript',
-        description: 'This Prework Study Guide was created for UoM Bootcamp students who were going through the Prework, in addition to being a great reference point for the basics in the subjects it contains. It contains detailed notes on HTML, CSS, Git, and JavaScript.',
-    }
+        name: 'This Portfolio',
+        deployedLink: 'https://jsparrowioportfolio.netlify.app/',
+        gitHubLink: 'https://github.com/jsparrowio/jsparrowio-react-portfolio',
+        screenshot: pflss,
+        contributors: 'Witten code by Josh Garrett (jsparrowio). Some code borrowed or based on code from class activities and old challenges from the UoM/edX Coding Bootcamp. Some code based on code found on Stack Overflow.',
+        techUsed: 'React, JavaScript, CSS, HTML',
+        description: 'This project was a portfolio for all of my coding work completing using ReactJS, CSS, and some HTML. The portfolio is meant to showcase all of my work completing as a Full Stack Developer, including work completed in the UofM/edX Full Stack Online Coding Bootcamp. The portfolio will also be kep up to date and evolved as more projects are completed and coding technologies learned. The site also contains some personal information, contact info, a contact me section, and a resume section.',
+    },
 ]

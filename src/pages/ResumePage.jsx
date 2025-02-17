@@ -14,7 +14,7 @@ export default function ResumePage() {
           <ul>
             <li>HTML</li>
             <li>CSS</li>
-            <li>React</li>
+            <li>React with JS & TS</li>
             <li>JavaScript</li>
             <li>Flexbox/Responsive Mobile First Design</li>
           </ul>
@@ -22,17 +22,29 @@ export default function ResumePage() {
           <ul>
             <li>Node.js</li>
             <li>TypeScript</li>
-            <li>Express.js & Vite</li>
+            <li>Express.js</li>
+            <li>Vite</li>
+            <li>JWT Authentication with Bcrypt</li>
             <li>SQL, Sequalize</li>
             <li>PostgreSQL</li>
+            <li>NoSQL with MongoDB</li>
+            <li>Apollo & GraphQL</li>
             <li>APIs and REST APIs</li>
-            <li>php</li>
+            <li>Base level Python</li>
+            <li>Base level php</li>
           </ul>
           <h3>Other Applicable Skills</h3>
           <ul>
             <li>GitHub/git</li>
             <li>npm</li>
+            <li>Vitest</li>
+            <li>Cypress</li>
+            <li>CI/CD Pipeline</li>
+            <li>Prompt engineering (AI) with LLMs</li>
             <li>9+ years team leadership</li>
+            <li>10+ years team collaboration</li>
+            <li>Excellent time management</li>
+            <li>Business accum & experienced communication with high-level executives</li>
           </ul>
         </div>
         <div className='placeholder'></div>

@@ -16,9 +16,6 @@ export default function Navigation() {
                 <Link key={2} to="/portfolio" className={navLocation.pathname === '/portfolio' ? 'nav-active-page' : ''}>
                     Portfolio
                 </Link>,
-                <Link key={3} to="/contact" className={navLocation.pathname === '/contact' ? 'nav-active-page' : ''}>
-                    Contact Me
-                </Link>,
                 <Link key={4} to="/resume" className={navLocation.pathname === '/resume' ? 'nav-active-page' : ''}>
                     Resume
                 </Link>,
