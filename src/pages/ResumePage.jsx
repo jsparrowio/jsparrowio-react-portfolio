@@ -44,7 +44,7 @@ export default function ResumePage() {
             <li>9+ years team leadership</li>
             <li>10+ years team collaboration</li>
             <li>Excellent time management</li>
-            <li>Business accum & experienced communication with high-level executives</li>
+            <li>Business acumen & experienced communication with high-level executives</li>
           </ul>
         </div>
         <div className='placeholder'></div>
