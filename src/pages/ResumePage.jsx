@@ -25,7 +25,7 @@ export default function ResumePage() {
             <li>Express.js</li>
             <li>Vite</li>
             <li>JWT Authentication with Bcrypt</li>
-            <li>SQL, Sequalize</li>
+            <li>SQL, Sequelize</li>
             <li>PostgreSQL</li>
             <li>NoSQL with MongoDB</li>
             <li>Apollo & GraphQL</li>

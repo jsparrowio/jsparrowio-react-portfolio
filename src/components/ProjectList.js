@@ -1,12 +1,22 @@
 // import screenshots to be used inside the project objects
-import wdss from '../assets/wdss.png';
 import pflss from '../assets/pflss.png';
 import ccss from '../assets/ccss.png';
+import aess from '../assets/aess.png'
 
 // exports the project list to be used elsewhere
 export const ProjectList = [
     {
         id: 'port-1',
+        name: 'Arceust Era',
+        deployedLink: 'https://arceust-era.onrender.com/',
+        gitHubLink: 'https://github.com/jsparrowio/arceust-era',
+        screenshot: aess,
+        contributors: 'Backend/server code, user system code and design, and final CSS design by Joshua Garrett (jsparrowio). For additional credits, please see repository.',
+        techUsed: 'MERN Stack, TypeScript, GraphQL/Apollo, JWT Auth, 3rd Party Pokémon APIs, Custom CSS, Ant Design, Render, GitHub Actions',
+        description: 'Arceust Era is a browser mini-game using the Pokemon API. Walk through several areas in the Safari Zone, catch Pokemon, and set up your dream team!',
+    },
+    {
+        id: 'port-2',
         name: 'Social Network API',
         deployedLink: '',
         gitHubLink: 'https://github.com/jsparrowio/social-network-api',
@@ -16,7 +26,7 @@ export const ProjectList = [
         description: 'The social network API is a basic express.js and MongoDB based API server that handles requests to view, add, update, or delete several key social network data points such as: Users, friends, thoughts, and reactions. This API server has no front end, so much be tested using a REST API request creator such as Insomnia',
     },
     {
-        id: 'port-2',
+        id: 'port-3',
         name: 'Candidate Search',
         deployedLink: 'https://candidate-search-xray.onrender.com/',
         gitHubLink: 'https://github.com/jsparrowio/candidate-search',
@@ -26,24 +36,14 @@ export const ProjectList = [
         description: 'This project can be used to find potential coding candidates for any coding projects. It pulls potential candiates from GitHub, puts them on a single card with their avatar and pertinent info, and allows the user to accept (to be reviewed later) or reject the candidate. Then, the user can review all saved candidates to pursue or finally reject.',
     },
     {
-        id: 'port-3',
+        id: 'port-4',
         name: 'CosmoCommute',
         deployedLink: '',
         gitHubLink: 'https://github.com/jsparrowio/cosmocommute',
         screenshot: ccss,
-        contributors: 'Josh Garrett, Ka Vue, Nic Blaize, and Sierra Bjorlin',
+        contributors: 'A portion of the backend server code, user/auth system, and entire user system design by Joshua Garrett (jsparrowio). For additional credits, please see repository.',
         techUsed: 'React, TypeScript, express.js, postgreSQL, jwt auth, and NASA APIs',
         description: 'CosmoCommute is an app designed for space travelers, offering updates on interstellar traffic and space weather events. This enables users to plan safe and efficient routes for their space journeys, ensuring a seamless and informed trave; experience among the stars. Note: Due to certain factors, this app is not currently deployed. Feel free to check out the code, or even clone to run locally!',
-    },
-    {
-        id: 'port-4',
-        name: 'Weather Dashboard',
-        deployedLink: 'https://weather-dashboard-uhei.onrender.com/',
-        gitHubLink: 'https://github.com/jsparrowio/weather-dashboard',
-        screenshot: wdss,
-        contributors: 'Base code by edX and their respective developers, written code by jsparrowio (Josh Garrett). Written code was also written with assistance from cohort instructors, TAs, and classmates.',
-        techUsed: 'TypeScript, JavaScript, HTML, CSS',
-        description: 'The weather dashboard was completed for our challenge of Module 9 for the UoM/edX Coding Bootcamp. It is used to find the current weather and weather forecase of a searched city. The application uses typeScript, express.js, and external API calls from OpenWeather.',
     },
     {
         id: 'port-5',
