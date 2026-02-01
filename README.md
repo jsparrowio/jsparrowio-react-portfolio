@@ -6,7 +6,7 @@
   
 This project was a portfolio for all of my coding work completing using ReactJS, CSS, and some HTML. The portfolio is meant to showcase all of my work completing as a Full Stack Developer, including work completed in the UofM/edX Full Stack Online Coding Bootcamp. The portfolio will also be kep up to date and evolved as more projects are completed and coding technologies learned. The site also contains some personal information, contact info, a contact me section, and a resume section.
 
-See deployed application [here](https://jsparrowioportfolio.netlify.app/)
+See deployed application [here](https://jsparrowio.com/)
 
 ## Screenshot
 
