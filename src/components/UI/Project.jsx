@@ -1,6 +1,4 @@
-// export the Project UI function to be imported elsewhere
 export default function Project({ projectsArray }) {
-    // returns a project card to be rendered on the page for every item in the array of objects fed into the function as an argument
     return (
         projectsArray.map((project) =>
             <div className="port-container" key={project.id + '-container-div'}>

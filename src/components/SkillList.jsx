@@ -1,9 +1,7 @@
-// import the Skills UI component to render the skill list on the page
+
 import Skills from './UI/Skills';
 
-// export the SkillList function to be imported elsewhere
 export default function SkillList() {
-    // a Skill icon will appear for every image link in the array
     return (
         <Skills
             links={[
@@ -20,11 +18,15 @@ export default function SkillList() {
                 'https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Sequelize-Dark.svg',
                 'https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/MongoDB.svg',
                 'https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/GraphQL-Dark.svg',
+                'https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Apollo.svg',
                 'https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/React-Dark.svg',
                 'https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Vite-Dark.svg',
                 'https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Cypress-Dark.svg',
                 'https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Jest.svg',
                 'https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/VSCode-Dark.svg',
+                'https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Cloudflare-Dark.svg',
+                'https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Docker.svg',
+                'https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Nginx.svg',
                 'https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/PHP-Dark.svg',
                 'https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Python-Dark.svg'
             ]}
