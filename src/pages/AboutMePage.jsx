@@ -1,36 +1,99 @@
-// import skill list component to render skill icons on page
 import Skills from '../components/SkillList';
-import me from '../assets/me.jpg'
+import me from '../assets/me.jpg';
 
-// export page to be used in the main app/router
 export default function AboutMePage() {
-  // return the page
   return (
-    <main>
-      <h2>About Me</h2>
-      <section className="page-section" id="aboutme">
-        <div id="personal-info">
-          <figure className="user" style={{backgroundImage: `url(${me})`}}></figure>
-          <h3>Joshua Garrett</h3>
-          <ul>
-            <li><b>Location:</b> San Francisco Bay Area, California</li>
-            <li><b>Current Role:</b> Open to new opportunities!</li>
-            <li><b>Contact:</b> <a href="mailto:jsparrowio@outlook.com">jsparrowio@outlook.com</a></li>
-            <li><b>GitHub:</b> <a href="https://github.com/jsparrowio">jsparrowio</a></li>
-          </ul>
+    <main className="page">
+      <section className="hero">
+        <div className="hero-left">
+          <p className="kicker">Hi — I’m Josh.</p>
+          <h2 className="hero-title">Full-Stack Developer & Systems Builder</h2>
+          <p className="hero-subtitle">
+            I build scalable web apps, APIs, and production-style self-hosted infrastructure.
+            I’m strongest on the backend, and I love shipping clean, reliable systems.
+          </p>
+
+          <div className="hero-actions">
+            <a
+              className="btn btn-secondary"
+              href="https://github.com/jsparrowio"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
+            <a
+              className="btn btn-secondary"
+              href="https://www.linkedin.com/in/joshua-garrett-121790297/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn
+            </a>
+          </div>
         </div>
-        <div className="section-content-div" id="about">
-          <h3>Greetings!</h3>
-          <p>My name is Josh Garrett, and I am a Full Stack Developer, having recently earned my certificate in MERN/PERN Full Stack Web Development from the University of Minnesota/edX Coding Bootcamp. </p>
-          <p>My previous professional experience has been chiefly in the retail landscape, holding 9+ years of retail leadership positions. However, I do feel this has prepared me for a future in the development world as it gave me invaluable experience working with teams, strong business acumen, developing great time management and organizational skills, and understanding the needs of clients. I also worked first-hand with ever-evolving technology in the retail landscape, often spearheading new technological rollouts and helping the team become accustom to new tech.</p>
-          <p>Beyond professional experience, I have worked with tech since a young age. I repaired my first computer at an early age, wrote my first website in HTML, php, and mySQL at 14, and have done several smaller hobby projects with code and hardware since. I have strong technical acumen, am a fast paced learner, and am always ready to take on a new challenge.</p>
-          <p>Look out for my future projects, and to see what comes next from Jsparrowio Website and Application Design.</p>
-          <p>Stay tuned!</p>
-          <br />
-          <h3>Skills:</h3>
-          <p><Skills /></p>
+
+        <div className="hero-right">
+          <div className="profile-card">
+            <div className="user" style={{ backgroundImage: `url(${me})` }} />
+            <div className="profile-meta">
+              <h3 className="profile-name">Joshua Garrett</h3>
+              <ul className="profile-list">
+                <li>
+                  <b>Location:</b> San Francisco Bay Area, CA
+                </li>
+                <li>
+                  <b>Status:</b> Open to opportunities
+                </li>
+                <li>
+                  <b>Email:</b>{' '}
+                  <a href="mailto:jsparrowio@outlook.com">jsparrowio@outlook.com</a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
         </div>
-        <div className='placeholder' id="about-right"></div>
+      </section>
+
+      <section className="page-section">
+        <h2 className="section-title">About</h2>
+
+        <div className="content-grid">
+          <div className="content-card">
+            <h3>What I do</h3>
+            <p>
+              I’m a full-stack developer specializing in MERN and PERN stacks, with a focus on
+              backend architecture, APIs, and auth flows. I like building systems that are
+              dependable, understandable, and easy to maintain.
+            </p>
+            <ul className="bullets">
+              <li>Backend APIs (REST/GraphQL), auth (JWT/OIDC), data modeling</li>
+              <li>Frontend UI in React with TypeScript when it helps the product</li>
+              <li>Deployment + operations with Docker and production-style tooling</li>
+            </ul>
+          </div>
+
+          <div className="content-card">
+            <h3>My edge</h3>
+            <p>
+              Before software, I spent 9+ years in retail leadership. That taught me how to run
+              complex operations, lead teams, and ship changes with real users in mind.
+            </p>
+            <ul className="bullets">
+              <li>Strong communication + ownership</li>
+              <li>Comfortable with ambiguity and troubleshooting</li>
+              <li>Business + customer empathy baked into engineering decisions</li>
+            </ul>
+          </div>
+
+          <div className="content-card content-card--wide">
+            <h3>Skills</h3>
+            <div className="skills-row">
+              <Skills />
+            </div>
+          </div>
+        </div>
       </section>
     </main>
   );

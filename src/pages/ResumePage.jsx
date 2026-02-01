@@ -1,53 +1,86 @@
-// export page to be used in the main app/router
-export default function ResumePage() {
+import { resumeSkills } from "../data/resume";
 
-  // return the page
+export default function ResumePage() {
   return (
-    <main>
-      <h2>Resume</h2>
-      <section className="page-section" id="aboutme">
-        <div id="placeholder">
-          <a href="https://docs.google.com/document/d/1rj9FzBkYMO6F1fcSwzQUrxo-EytDBoBK/edit?usp=sharing&ouid=113933529286083268853&rtpof=true&sd=true"><img src="https://www.svgrepo.com/show/5908/text-document.svg" className="pdf" style={{ maxHeight: '15px', maxWidth: '15px' }}></img>Download My Resume!</a>
+    <main className="resume-page">
+      <div className="resume-header">
+        <div className="resume-hero">
+          <div className="resume-hero-text">
+            <h2 className="hero-title">Resume</h2>
+            <p>
+              Full-stack developer focused on scalable web apps, backend systems,
+              and production-style infrastructure.
+            </p>
+
+            <div className="resume-actions">
+              <a
+                className="resume-btn primary"
+                href="https://docs.google.com/document/d/1rj9FzBkYMO6F1fcSwzQUrxo-EytDBoBK/edit?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="https://www.svgrepo.com/show/5908/text-document.svg"
+                  alt=""
+                  className="resume-icon"
+                />
+                Download Resume
+              </a>
+
+              <a className="resume-btn" href="#skills">
+                View Skills
+              </a>
+            </div>
+          </div>
+          <aside className="resume-hero-card">
+            <div className="resume-metric">
+              <div className="resume-metric-value">9+ yrs</div>
+              <div className="resume-metric-label">Leadership</div>
+            </div>
+            <div className="resume-metric">
+              <div className="resume-metric-value">MERN/PERN</div>
+              <div className="resume-metric-label">Full Stack</div>
+            </div>
+            <div className="resume-metric">
+              <div className="resume-metric-value">Docker + ZFS</div>
+              <div className="resume-metric-label">Infrastructure</div>
+            </div>
+          </aside>
         </div>
-        <div className="section-content-div" id="resume">
-          <h3>Front End Profeciencies</h3>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>React with JS & TS</li>
-            <li>JavaScript</li>
-            <li>Flexbox/Responsive Mobile First Design</li>
-          </ul>
-          <h3>Back End Profeciencies</h3>
-          <ul>
-            <li>Node.js</li>
-            <li>TypeScript</li>
-            <li>Express.js</li>
-            <li>Vite</li>
-            <li>JWT Authentication with Bcrypt</li>
-            <li>SQL, Sequelize</li>
-            <li>PostgreSQL</li>
-            <li>NoSQL with MongoDB</li>
-            <li>Apollo & GraphQL</li>
-            <li>APIs and REST APIs</li>
-            <li>Base level Python</li>
-            <li>Base level php</li>
-          </ul>
-          <h3>Other Applicable Skills</h3>
-          <ul>
-            <li>GitHub/git</li>
-            <li>npm</li>
-            <li>Vitest</li>
-            <li>Cypress</li>
-            <li>CI/CD Pipeline</li>
-            <li>Prompt engineering (AI) with LLMs</li>
-            <li>9+ years team leadership</li>
-            <li>10+ years team collaboration</li>
-            <li>Excellent time management</li>
-            <li>Business acumen & experienced communication with high-level executives</li>
-          </ul>
+        <section className="resume-callout">
+          <h3>Strength</h3>
+          <p>
+            I bridge full-stack web development with production-grade infrastructure, designing and operating containerized systems with secure auth, networking, and reliability—while leading technical decisions from architecture through delivery.
+          </p>
+        </section>
+      </div>
+
+      <section className="resume-section" id="skills">
+        <h3 className="resume-section-title">Core Technical Skills</h3>
+
+        <div className="resume-skill-grid">
+          {resumeSkills.map((group) => (
+            <article
+              key={group.id}
+              className={`resume-skill-card ${group.featured ? "featured" : ""}`}
+            >
+              <div className="resume-skill-card-header">
+                <h4>{group.title}</h4>
+                {group.featured && (
+                  <span className="resume-badge">Differentiator</span>
+                )}
+              </div>
+
+              <div className="resume-chip-grid">
+                {group.items.map((item) => (
+                  <span key={item} className="resume-chip">
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </article>
+          ))}
         </div>
-        <div className='placeholder'></div>
       </section>
     </main>
   );
