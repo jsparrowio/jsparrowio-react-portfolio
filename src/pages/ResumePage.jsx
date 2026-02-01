@@ -15,7 +15,7 @@ export default function ResumePage() {
             <div className="resume-actions">
               <a
                 className="resume-btn primary"
-                href="https://docs.google.com/document/d/1rj9FzBkYMO6F1fcSwzQUrxo-EytDBoBK/edit?usp=sharing"
+                href="https://docs.google.com/document/d/1uf0P3M5Li2yba6Q5snrT8aQ6-vYCIUxm/edit?usp=sharing&ouid=113933529286083268853&rtpof=true&sd=true"
                 target="_blank"
                 rel="noopener noreferrer"
               >
